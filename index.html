@@ -38,6 +38,25 @@
 
 <body>
 
+  <script>
+    function resizeImageBasedOnBulletPoints() {
+      // Count the number of bullet points
+      var bulletPoints = document.querySelectorAll('#aboutbulletid li');
+      var bulletPointsCount = bulletPoints.length;
+      
+      // Calculate the new height of the image
+      // Assuming each bullet point corresponds to 50px of image height
+      var newImageHeight = bulletPointsCount * 60;
+
+      // Use the id selector to target the image
+      var image = document.getElementById('profileImage');
+      image.style.height = newImageHeight + 'px';
+    }
+
+    // Add event listener for DOMContentLoaded to run the function when the document is ready
+    document.addEventListener('DOMContentLoaded', resizeImageBasedOnBulletPoints);
+  </script>
+
   <!-- ======= Mobile nav toggle button ======= -->
   <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
 
@@ -84,26 +103,26 @@
 
         <div class="section-title">
           <h2>About</h2>
-          <p align="justify" style="margin-bottom: 20px;"> Hello, I'm Aboli Vijay Yadav, and I'm on a mission to make a positive impact on our world through clean energy solutions. My journey began with a Bachelor's degree in Electrical Engineering, which ignited my curiosity about the profound influence of electricity on society and our planet.</p>
-          <p align="justify" style="margin-bottom: 20px;"> I delved deeper into the world of energy, I couldn't ignore the stark environmental consequences associated with conventional sources like coal and natural gas. This realization fueled my passion for renewable energy, recognizing it as the antidote to the environmental challenges we face. My pursuit of understanding the renewable energy market, its challenges, and the policies governing energy production, distribution, and consumption became my driving force.</p>
-          <p align="justify" style="margin-bottom: 20px;"> My hands-on experience in renewable projects, starting from my undergraduate years, allowed me to witness firsthand the transformative power of sustainable energy solutions. Additionally, my 14-month tenure at Kreate Energy India Limited gave me valuable insights into power procurement, renewable energy billing, and renewable energy certificate generation.</p>
-          <p align="justify" style="margin-bottom: 20px;"> I firmly believe that energy is the fourth basic necessity for humanity, and I am dedicated to playing my part in ensuring it's accessible, clean, and sustainable for all. I approach every project with unwavering passion, ambition, and enthusiasm, always willing to go the extra mile to meet and exceed deadlines. My leadership skills and ability to collaborate with diverse teams make me an asset in any endeavor.</p>
-          <p align="justify" style="margin-bottom: 20px;"> As I look ahead, I am eager to embrace the exciting opportunities and challenges that the energy market presents. My ultimate goal is to contribute to a greener, more sustainable Earth, where clean energy is not just an option but a fundamental part of our daily lives.</p>
+          <p align="justify" style="margin-bottom: 10px;"> Hello, I'm Aboli Vijay Yadav, and I'm on a mission to make a positive impact on our world through clean energy solutions. My journey began with a Bachelor's degree in Electrical Engineering, which ignited my curiosity about the profound influence of electricity on society and our planet.</p>
+          <p align="justify" style="margin-bottom: 10px;"> I delved deeper into the world of energy, I couldn't ignore the stark environmental consequences associated with conventional sources like coal and natural gas. This realization fueled my passion for renewable energy, recognizing it as the antidote to the environmental challenges we face. My pursuit of understanding the renewable energy market, its challenges, and the policies governing energy production, distribution, and consumption became my driving force.</p>
+          <p align="justify" style="margin-bottom: 10px;"> My hands-on experience in renewable projects, starting from my undergraduate years, allowed me to witness firsthand the transformative power of sustainable energy solutions. Additionally, my 14-month tenure at Kreate Energy India Limited gave me valuable insights into power procurement, renewable energy billing, and renewable energy certificate generation.</p>
+          <p align="justify" style="margin-bottom: 10px;"> I firmly believe that energy is the fourth basic necessity for humanity, and I am dedicated to playing my part in ensuring it's accessible, clean, and sustainable for all. I approach every project with unwavering passion, ambition, and enthusiasm, always willing to go the extra mile to meet and exceed deadlines. My leadership skills and ability to collaborate with diverse teams make me an asset in any endeavor.</p>
+          <p align="justify" style="margin-bottom: 10px;"> As I look ahead, I am eager to embrace the exciting opportunities and challenges that the energy market presents. My ultimate goal is to contribute to a greener, more sustainable Earth, where clean energy is not just an option but a fundamental part of our daily lives.</p>
         </div>
 
-        <div class="row">
-          <div class="col-lg-4" data-aos="fade-right">
-            <img src="assets/img/Aboli_Yadav.jpg" class="img-fluid" alt="">
+        <div class="profile-container">
+          <div class="profile-image" data-aos="fade-right">
+            <img src="assets/img/Aboli_Yadav.jpg" class="img-fluid" alt="Profile Image", id="profileImage">
           </div>
-          <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+          <div class="content profile-details" data-aos="fade-left">
             <h3>Graduate Student at UB</h3>
             <p class="fst-italic">
             </p>
             <div class="row">
               <div>
-                <ul>
+                <ul id="aboutbulletid">
                   <li><i class="bi bi-chevron-right"></i> <strong>Linkedin:</strong><a href="https://www.linkedin.com/in/aboli-yadav"><span>https://www.linkedin.com/in/aboli-yadav</span></a></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>716-256-7311</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong><a href="tel:+17162567311"><span>716-256-7311</span></a></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Buffalo, NY, USA</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>MS in Engineering Sciences: Clean Energy</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong><a href="mailto:abolivyadav@gmail.com"><span>abolivyadav@gmail.com</span></a></li>
@@ -592,19 +611,19 @@
               <div class="address">
                 <i class="bi bi-geo-alt"></i>
                 <h4>Location:</h4>
-                <p>165 Niagara Falls Blvd, Amherst, NY, 14226</p>
+                <p><a href="https://maps.app.goo.gl/7nuK3w5ZpcvfsqsZ8" target="_blank">165 Niagara Falls Blvd, Amherst, NY, 14226</a></p>
               </div>
 
               <div class="email">
                 <i class="bi bi-envelope"></i>
                 <h4>Email:</h4>
-                <p>abolivyadav@gmail.com</p>
+                <p><a href="mailto:abolivyadav@gmail.com">abolivyadav@gmail.com</a></p>
               </div>
 
               <div class="phone">
                 <i class="bi bi-phone"></i>
                 <h4>Call:</h4>
-                <p>+1 (716) 256 7311</p>
+                <p><a href="tel:+17162567311">+1 (716) 256 7311</a></p>
               </div>
 
              <!-- <iframe src="https://www.google.com/maps/place/165+Niagara+Falls+Blvd,+Buffalo,+NY+14226/@42.9587059,-78.8235316,17z/data=!3m1!4b1!4m6!3m5!1s0x89d37296e5942a65:0x4ecd40137f9e08d4!8m2!3d42.9587059!4d-78.8235316!16s%2Fg%2F11c1cn3db4?entry=ttu" allowfullscreen></iframe>-->

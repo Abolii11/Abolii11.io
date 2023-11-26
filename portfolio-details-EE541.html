@@ -34,6 +34,13 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+
+  <style>
+    .row.gy-4 {
+  display: flex;
+  align-items: center; /* This will vertically center the children */
+  }
+  </style>
 </head>
 
 <body>
@@ -56,12 +63,12 @@
       </div>
       <nav id="navbar" class="nav-menu navbar">
         <ul>
-          <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
-          <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
-          <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
-          <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Academic Reflections</span></a></li>
+          <li><a href="index.html#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
+          <li><a href="index.html#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
+          <li><a href="index.html#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
+          <li><a href="index.html#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Academic Reflections</span></a></li>
           <!--<li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Integrated Learning</span></a></li>-->
-          <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
+          <li><a href="index.html#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
         </ul>
       </nav><!-- .nav-menu -->
     </div>
@@ -84,58 +91,54 @@
       </div>
     </section><!-- End Breadcrumbs -->
 
-    <!-- ======= Portfolio Details Section ======= -->
+    
     <section id="portfolio-details" class="portfolio-details">
       <div class="container">
+          <div class="row gy-4">
 
-        <div class="row gy-4">
-
-          <div class="col-lg-8">
-            <div class="portfolio-details-slider swiper">
-              <div class="swiper-wrapper align-items-center">
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-details-1-EE541.png" alt="">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-details-2-EE541.png" alt="">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-details-3-EE541.png" alt="">
-                </div>
-
+              <div class="col-lg-6">
+                  <div class="portfolio-details-slider swiper">
+                      <div class="swiper-wrapper align-items-center">
+                          <div class="swiper-slide">
+                              <img src="assets/img/portfolio/portfolio-details-1-EE541-new.png" alt="">
+                              <div class="caption" ><p align="center">Caption</p></div>
+                          </div>
+                          <div class="swiper-slide">
+                              <img src="assets/img/portfolio/portfolio-details-2-EE541-new.png" alt="">
+                              <div class="caption" ><p align="center">Caption</p></div>
+                          </div>
+                          <div class="swiper-slide">
+                              <img src="assets/img/portfolio/portfolio-details-3-EE541-new.png" alt="">
+                              <div class="caption" ><p align="center">Caption</p></div>
+                          </div>
+                      </div>
+                      <div class="swiper-pagination"></div>
+                  </div>
               </div>
-              <div class="swiper-pagination"></div>
-            </div>
+
+              <div class="col-lg-6">
+                  <div class="portfolio-info">
+                      <h3>Course information</h3>
+                      <ul>
+                        <li><strong>Course Title</strong>: Energy Storage</li>
+                        <li><strong>Professor</strong>: Dr. Jim P. Zheng</li>
+                        <li><strong>Project Title</strong>: Tesla's Megapack</li>
+                        <!--<li><strong>Project URL</strong>: <a href="#">www.example.com</a></li>-->
+                      </ul>
+                  </div>
+              </div>
           </div>
 
-          <div class="col-lg-4">
-            <div class="portfolio-info">
-              <h3>Course information</h3>
-              <ul>
-                <li><strong>Course Title</strong>: Energy Storage</li>
-                <li><strong>Professor</strong>: Dr. Jim P. Zheng</li>
-                <li><strong>Project Title</strong>: Tesla's Megapack</li>
-                <!--<li><strong>Project URL</strong>: <a href="#">www.example.com</a></li>-->
-              </ul>
-            </div>
-            <div class="portfolio-description">
+          <div class="portfolio-description">
               <h2>EE541 Energy Storage</h2>
-              <p>
-                EE 541, the "Energy Storage" course taught by Dr. Jim P. Zheng, provided a comprehensive overview of energy storage devices, emphasizing electrochemical storages like advanced rechargeable batteries, fuel cells, and supercapacitors. The course delved into their operating principles, electrochemical mechanisms, underlying physics, characterization methods, and various applications. 
-                <br>Assessment in the course encompassed two midterm exams, a final exam, lab work, and a project presentation. Each student was provided an energy storage device, either a battery or capacitor, for the lab component. Through systematic experiments, we gauged fundamental parameters like power and energy storage capabilities, efficiency, and response time, among others. Exclusive to graduate students, the project presentation comprised a report and an oral segment. It mandated a review of a commercial application of a chosen energy storage device within a 1,000 to 1,500-word range. Notably, the presentation was structured as a symposium, emulating an authentic technical conference. 
-                <br>The syllabus spanned topics like Basic Energy Concepts, Thermal Energy Storage, Flywheel Energy Storage, Pumped Hydro Storage, Superconducting Magnetic Energy Storage, Hydrogen Storage, Electrochemistry, Supercapacitors, Non-Li-ion Batteries, Li-ion Batteries, Flow Batteries, PEMFCs, and Non-PEMFCs. I was particularly captivated by the configuration of the Superconducting Magnetic Energy Storage system and its miniaturized version. The potential application of SMES in the Electromagnetic Aircraft Launch System especially piqued my interest. While the lab work presented challenges, it proved invaluable in discerning battery types through hands-on tests and analyses.
-                <br>In summary, EE 541 offers an immersive experience, from understanding diverse storage devices to real-world application discussions and hands-on laboratory engagement. I highly recommend this course to students eyeing careers with BESS systems or aspiring to become Energy Storage Engineers.
-              </p>
+              <!-- Description content here -->
+              <p align="justify" style="margin-bottom: 10px;">EE 541, the "Energy Storage" course taught by Dr. Jim P. Zheng, provided a comprehensive overview of energy storage devices, emphasizing electrochemical storages like advanced rechargeable batteries, fuel cells, and supercapacitors. The course delved into their operating principles, electrochemical mechanisms, underlying physics, characterization methods, and various applications.</p>
+              <p align="justify" style="margin-bottom: 10px;">Assessment in the course encompassed two midterm exams, a final exam, lab work, and a project presentation. Each student was provided an energy storage device, either a battery or capacitor, for the lab component. Through systematic experiments, we gauged fundamental parameters like power and energy storage capabilities, efficiency, and response time, among others. Exclusive to graduate students, the project presentation comprised a report and an oral segment. It mandated a review of a commercial application of a chosen energy storage device within a 1,000 to 1,500-word range. Notably, the presentation was structured as a symposium, emulating an authentic technical conference.</p>
+              <p align="justify" style="margin-bottom: 10px;">The syllabus spanned topics like Basic Energy Concepts, Thermal Energy Storage, Flywheel Energy Storage, Pumped Hydro Storage, Superconducting Magnetic Energy Storage, Hydrogen Storage, Electrochemistry, Supercapacitors, Non-Li-ion Batteries, Li-ion Batteries, Flow Batteries, PEMFCs, and Non-PEMFCs. I was particularly captivated by the configuration of the Superconducting Magnetic Energy Storage system and its miniaturized version. The potential application of SMES in the Electromagnetic Aircraft Launch System especially piqued my interest. While the lab work presented challenges, it proved invaluable in discerning battery types through hands-on tests and analyses.</p>
+              <p align="justify" style="margin-bottom: 10px;">In summary, EE 541 offers an immersive experience, from understanding diverse storage devices to real-world application discussions and hands-on laboratory engagement. I highly recommend this course to students eyeing careers with BESS systems or aspiring to become Energy Storage Engineers.</p>
             </div>
-          </div>
-
-        </div>
-
       </div>
-    </section><!-- End Portfolio Details Section -->
+  </section>
 
   </main><!-- End #main -->
 
